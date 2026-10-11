@@ -32,5 +32,33 @@ fun KartuBandScreen(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.header_spacer_height)))
+        CharacterCard(
+            nameRes = R.string.name_bocchi,
+            instrumentRes = R.string.instrument_bocchi,
+            hobbyRes = R.string.hobby_bocchi,
+            photoRes = R.drawable.img_bocchi,
+            colorRes = R.color.card_bocchi_bg
+        )
+        CharacterCard(
+            nameRes = R.string.name_nijika,
+            instrumentRes = R.string.instrument_nijika,
+            hobbyRes = R.string.hobby_nijika,
+            photoRes = R.drawable.img_nijika,
+            colorRes = R.color.card_nijika_bg
+        )
+        CharacterCard(
+            nameRes = R.string.name_kita,
+            instrumentRes = R.string.instrument_kita,
+            hobbyRes = R.string.hobby_kita,
+            photoRes = R.drawable.img_kita,
+            colorRes = R.color.card_kita_bg
+        )
+        CharacterCard(
+            nameRes = R.string.name_ryo,
+            instrumentRes = R.string.instrument_ryo,
+            hobbyRes = R.string.hobby_ryo,
+            photoRes = R.drawable.img_ryo,
+            colorRes = R.color.card_ryo_bg
+        )
     }
 }
