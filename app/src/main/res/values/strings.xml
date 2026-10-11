@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Tugas 3</string>
+    <string name="title_band">Bocchi the Rock!</string>
+    <string name="subtitle_band">Kessoku Band, Shimokitazawa</string>
+    <string name="copyright">Copyright, 2026</string>
 </resources>
