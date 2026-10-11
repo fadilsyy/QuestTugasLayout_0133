@@ -11,4 +11,8 @@
     <color name="card_nijika_bg">#B26A00</color>
     <color name="card_kita_bg">#C62828</color>
     <color name="card_ryo_bg">#1A237E</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#FFF59D</color>
+    <color name="placeholder_bg">#BDBDBD</color>
+    <color name="placeholder_icon">#757575</color>
 </resources>
