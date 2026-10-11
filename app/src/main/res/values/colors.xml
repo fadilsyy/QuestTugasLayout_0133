@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_bocchi_bg">#D81B60</color>
+    <color name="card_nijika_bg">#B26A00</color>
+    <color name="card_kita_bg">#C62828</color>
+    <color name="card_ryo_bg">#1A237E</color>
 </resources>
