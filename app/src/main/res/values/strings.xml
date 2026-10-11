@@ -14,4 +14,8 @@
     <string name="name_ryo">Ryo Yamada</string>
     <string name="instrument_ryo">Bass</string>
     <string name="hobby_ryo">Mengoleksi barang unik</string>
+    <string name="label_instrument">Alat musik: %1$s</string>
+    <string name="label_hobby">Hobi: %1$s</string>
+    <string name="cd_character_photo">Foto %1$s</string>
+    <string name="cd_band_logo">Logo Kessoku Band</string>
 </resources>
