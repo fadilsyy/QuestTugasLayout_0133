@@ -12,6 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
 
 @Composable
 fun KartuBandScreen(modifier: Modifier = Modifier) {
@@ -60,5 +62,17 @@ fun KartuBandScreen(modifier: Modifier = Modifier) {
             photoRes = R.drawable.img_ryo,
             colorRes = R.color.card_ryo_bg
         )
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth(),
+            contentAlignment = Alignment.BottomCenter
+        ) {
+            Text(
+                text = stringResource(R.string.copyright),
+                fontSize = spResource(R.dimen.text_copyright),
+                modifier = Modifier.padding(bottom = dimensionResource(R.dimen.copyright_bottom_padding))
+            )
+        }
     }
 }
