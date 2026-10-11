@@ -20,6 +20,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Text
+import androidx.compose.ui.text.font.FontWeight
 
 @Composable
 fun CharacterCard(
@@ -51,7 +54,26 @@ fun CharacterCard(
                     .padding(dimensionResource(R.dimen.image_padding))
             )
             Spacer(modifier = Modifier.width(dimensionResource(R.dimen.spacer_width)))
-            Spacer(modifier = Modifier.weight(1f))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = name,
+                    fontSize = spResource(R.dimen.text_name),
+                    fontWeight = FontWeight.Bold,
+                    color = colorResource(R.color.text_primary)
+                )
+                Text(
+                    text = stringResource(R.string.label_instrument, stringResource(instrumentRes)),
+                    fontSize = spResource(R.dimen.text_detail),
+                    color = colorResource(R.color.text_secondary),
+                    modifier = Modifier.padding(top = dimensionResource(R.dimen.detail_spacing_top))
+                )
+                Text(
+                    text = stringResource(R.string.label_hobby, stringResource(hobbyRes)),
+                    fontSize = spResource(R.dimen.text_detail),
+                    color = colorResource(R.color.text_primary),
+                    modifier = Modifier.padding(top = dimensionResource(R.dimen.detail_spacing_top))
+                )
+            }
             Spacer(modifier = Modifier.width(dimensionResource(R.dimen.spacer_width)))
             Image(
                 painter = painterResource(R.drawable.logo_band),
